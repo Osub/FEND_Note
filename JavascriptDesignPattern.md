@@ -199,7 +199,27 @@ var obj0 = new Object();
 |{}         |true     |NaN       |"[object Object]"|
    
 ----------------------------
+**类型识别**
+|值                 |typeof         |constructor       |instanceof           |Object.prototype.toString           |
+|:-----------------:|:-------------:|:----------------:|:-------------------:|:----------------------------------:|
+|'abc'              |String         |||String|
+|88                 |Number         |||Number|
+|true               |Boolean        |||Boolean|
+|undefined          |undefined      |||undefined|
+|null               |Object[^can't] |||null|
+|{}                 |Object         |||Object|
+|function(){}       |Function       |||Function|
+|[]                 |Object[^can't] |||Array|
+|new Date           |Object[^can't] |||Date|
+|/\d+/              |Object[^can't] |||RegExp|
+|function Class(){} new Class;|Object[^can't] |||Object[^can't]|
 
+--------------------------------------
+**总结**
+>* typeof 可以识别标准类型【除了null外】；
+>* typeof 不能识别具体的对象类型【除了Function对象】
+>* Object.prototype.toString  可以识别标准类型和内置对象
+>* Object.prototype.toString  不能识别自定义类型
 
 ## 内置对象
 
@@ -213,3 +233,6 @@ var obj0 = new Object();
 
 ## 面向对象
 
+
+------------
+[^can't]: 不能正确判断值的类型。
