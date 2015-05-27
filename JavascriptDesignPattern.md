@@ -200,19 +200,19 @@ var obj0 = new Object();
    
 ----------------------------
 **类型识别**
-|值                 |typeof         |constructor       |instanceof           |Object.prototype.toString           |
-|:-----------------:|:-------------:|:----------------:|:-------------------:|:----------------------------------:|
-|'abc'              |String         |||String|
-|88                 |Number         |||Number|
-|true               |Boolean        |||Boolean|
-|undefined          |undefined      |||undefined|
-|null               |Object[^can't] |||null|
-|{}                 |Object         |||Object|
-|function(){}       |Function       |||Function|
-|[]                 |Object[^can't] |||Array|
-|new Date           |Object[^can't] |||Date|
-|/\d+/              |Object[^can't] |||RegExp|
-|function Class(){} new Class;|Object[^can't] |||Object[^can't]|
+|值                            |typeof         |constructor       |instanceof           |Object.prototype.toString           |
+|:----------------------------:|:-------------:|:----------------:|:-------------------:|:----------------------------------:|
+|'abc'                         |String         |-|-|String|
+|88                            |Number         |-|-|Number|
+|true                          |Boolean        |-|-|Boolean|
+|undefined                     |undefined      |-|-|undefined|
+|null                          |Object[^cant] |-|-|null|
+|```javascript  {}```          |Object         |-|-|Object|
+|```javascript function(){} ```|Function       |-|-|Function|
+|[]                            |Object[^cant] |-|-|Array|
+|new Date                      |Object[^cant] |-|-|Date|
+|```javascript /\d+/ ```       |Object[^cant] |-|-|RegExp|
+|```javascript function Class(){} new Class; ```|Object[^cant] |-|-|Object[^cant]|
 
 --------------------------------------
 **总结**
@@ -235,4 +235,4 @@ var obj0 = new Object();
 
 
 ------------
-[^can't]: 不能正确判断值的类型。
+[^cant]: 不能正确判断值的类型。
