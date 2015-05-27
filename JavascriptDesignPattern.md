@@ -207,12 +207,12 @@ var obj0 = new Object();
 |true                          |Boolean        |-|-|Boolean|
 |undefined                     |undefined      |-|-|undefined|
 |null                          |Object[^cant] |-|-|null|
-|```javascript  {}```          |Object         |-|-|Object|
-|```javascript function(){} ```|Function       |-|-|Function|
+|{}          |Object         |-|-|Object|
+|function(){} |Function       |-|-|Function|
 |[]                            |Object[^cant] |-|-|Array|
 |new Date                      |Object[^cant] |-|-|Date|
-|```javascript /\d+/ ```       |Object[^cant] |-|-|RegExp|
-|```javascript function Class(){} new Class; ```|Object[^cant] |-|-|Object[^cant]|
+|/\d+/        |Object[^cant] |-|-|RegExp|
+|function Class(){} new Class |Object[^cant] |-|-|Object[^cant]|
 
 --------------------------------------
 **总结**
