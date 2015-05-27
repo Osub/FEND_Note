@@ -203,17 +203,17 @@ var obj0 = new Object();
 
 |值                            |typeof         |constructor       |instanceof           |Object.prototype.toString           |
 |:----------------------------:|:-------------:|:----------------:|:-------------------:|:----------------------------------:|
-|'abc'                         |String         |-no               |-no                  |String                              |
-|88                            |Number         |-no               |-no                  |Number                              |
-|true                          |Boolean        |-no               |-no                  |Boolean                             |
-|undefined                     |undefined      |-no               |-no                  |undefined                           |
-|null                          |Object no      |-no               |-no                  |null                                |
-|{}                            |Object         |-no               |-no                  |Object                              |
-|function(){}                  |Function       |-no               |-no                  |Function                            |
-|[]                            |Object no      |-no               |-no                  |Array                               |
-|new Date                      |Object no      |-no               |-no                  |Date                                |
-|/\d+/                         |Object no      |-no               |-no                  |RegExp                              |
-|function Class(){} new Class  |Object no      |-no               |-no                  |Object no                           |
+|'abc'                         |String         |<i class="icon-flag"></i>|<i class="icon-flag"></i>|String                              |
+|88                            |Number         |<i class="icon-flag"></i>|<i class="icon-flag"></i>|Number                              |
+|true                          |Boolean        |<i class="icon-flag"></i>|<i class="icon-flag"></i>|Boolean                             |
+|undefined                     |undefined      |<i class="icon-flag"></i>|<i class="icon-flag"></i>|undefined                           |
+|null                          |Object<i class="icon-exclamation-sign"></i>|<i class="icon-flag"></i>|<i class="icon-flag"></i>  |null                                |
+|{}                            |Object         |<i class="icon-flag"></i>|<i class="icon-flag"></i>|Object                              |
+|function(){}                  |Function       |<i class="icon-flag"></i>|<i class="icon-flag"></i>|Function                            |
+|[]                            |Object<i class="icon-exclamation-sign"></i>|<i class="icon-flag"></i>|<i class="icon-flag"></i> |Array                               |
+|new Date                      |Object<i class="icon-exclamation-sign"></i>|<i class="icon-flag"></i>|<i class="icon-flag"></i> |Date                                |
+|/\d+/                         |Object<i class="icon-exclamation-sign"></i>|<i class="icon-flag"></i>|<i class="icon-flag"></i> |RegExp                              |
+|function Class(){} new Class  |Object<i class="icon-exclamation-sign"></i>|<i class="icon-flag"></i>|<i class="icon-flag"></i> |Object<i class="icon-exclamation-sign"></i>|
 
 --------------------------------------
 **总结**
