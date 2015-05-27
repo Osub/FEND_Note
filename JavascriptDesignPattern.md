@@ -200,19 +200,20 @@ var obj0 = new Object();
    
 ----------------------------
 **类型识别**
+
 |值                            |typeof         |constructor       |instanceof           |Object.prototype.toString           |
 |:----------------------------:|:-------------:|:----------------:|:-------------------:|:----------------------------------:|
-|'abc'                         |String         |-|-|String|
-|88                            |Number         |-|-|Number|
-|true                          |Boolean        |-|-|Boolean|
-|undefined                     |undefined      |-|-|undefined|
-|null                          |Object[^cant] |-|-|null|
-|{}          |Object         |-|-|Object|
-|function(){} |Function       |-|-|Function|
-|[]                            |Object[^cant] |-|-|Array|
-|new Date                      |Object[^cant] |-|-|Date|
-|/\d+/        |Object[^cant] |-|-|RegExp|
-|function Class(){} new Class |Object[^cant] |-|-|Object[^cant]|
+|'abc'                         |String         |-no               |-no                  |String                              |
+|88                            |Number         |-no               |-no                  |Number                              |
+|true                          |Boolean        |-no               |-no                  |Boolean                             |
+|undefined                     |undefined      |-no               |-no                  |undefined                           |
+|null                          |Object no      |-no               |-no                  |null                                |
+|{}                            |Object         |-no               |-no                  |Object                              |
+|function(){}                  |Function       |-no               |-no                  |Function                            |
+|[]                            |Object no      |-no               |-no                  |Array                               |
+|new Date                      |Object no      |-no               |-no                  |Date                                |
+|/\d+/                         |Object no      |-no               |-no                  |RegExp                              |
+|function Class(){} new Class  |Object no      |-no               |-no                  |Object no                           |
 
 --------------------------------------
 **总结**
